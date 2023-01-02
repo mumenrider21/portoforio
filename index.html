@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>App01</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+
+
+	<header id="header">
+		<div class="inne　r">
+		  <p class="logo">無免ライダー</p>
+		  <ul class="navi">
+			<li><a href="#">ホーム</a></li>
+			<li><a href="#">作品</a></li>
+			<li><a href="#">お問い合わせ</a></li>
+		  </ul>
+		</div>
+	  </header>
+
+
+
+	<style>
+		.fade{
+			animation: fadeIn 2s ease 0.3s 1 normal;
+		}
+		@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+			0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+			100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+		}
+	</style>
+	<div class="fade">
+		<div id="top">
+		<img src="/01_jq_portfolios/portfolios/app01/images/sample_01.jp">
+		画像
+	</div>
+	</div>
+
+	<h1>Portfolios</h1>
+	<ol>
+	
+		<div class="transition_target1"><li><a href="./portfolios/app01/">ポン出しくん</a></li></div>
+		<div class="transition_target2"><li><a href="./portfolios/app02/">お天気くん</a></li></div>
+		<div class="transition_target3"><li><a href="./portfolios/app03/">xxくん</a></li></div>
+		</ul>
+	 
+	<div class="start">
+		<p><img src="images/3.jpg" alt=""></p>
+	</div>
+
+<footer>
+	<div class="footer05">
+		<div class="wrap">
+		 <div class="box">
+		   <h3>ホーム</h3>
+		   <p>
+			<a href="#">
+			トップへ戻る
+			</a>
+		   </p>
+
+		 </div>
+		 <div class="box">
+		   <h3>お気に入り作品</h3>
+		   <ul>
+			 <li><a href="#">ゼロワンドライバーCSM化</a></li>
+			 <li><a href="#">バイスタンププロップ塗装</a></li>
+			 <li><a href="#">ギーツマスク作成</a></li>
+			 <li><a href="#">s</a></li>
+		   </ul>
+		 </div>
+		 <div class="box">
+		   <h3>あ</h3>
+		   <ul>
+		   <li><a href="#">FFFFF</a></li>
+		   <li><a href="#">GGGGG</a></li>
+		   <li><a href="#">HHHHH</a></li>
+		   <li><a href="#">IIIII</a></li>
+		   <li><a href="#">JJJJJ</a></li>
+		   </ul>
+		 </div>
+		 <div class="box">
+		   <h3>ル</h3>
+		   <ul>
+		   <li><a href="#">KKKKK</a></li>
+		   <li><a href="#">LLLLL</a></li>
+		   <li><a href="#">MMMMM</a></li>
+		   <li><a href="#">NNNNN</a></li>
+		   <li><a href="#">OOOOO</a></li>
+		   </ul>
+		 </div>
+		 <p class="copyright">
+		   &copy; My Site
+		 </p>
+		</div>
+	   </div>
+</footer>		
+																																														<!-- JavaScript -->
+	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="./main.js"></script>
+
+	<script>
+function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>App01</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+
+
+	<header id="header">
+		<div class="inner">
+		  <p class="logo">無免ライダー</p>
+		  <ul class="navi">
+			<li><a href="#">ホーム</a></li>
+			<li><a href="#">作品</a></li>
+			<li><a href="#">お問い合わせ</a></li>
+		  </ul>
+		</div>
+	  </header>
+
+	<style>
+		.fade{
+			animation: fadeIn 2s ease 0.3s 1 normal;
+		}
+		@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+			0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+			100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+		}
+	</style>
+	<div class="fade">
+		<div id="top">
+		<img src="/01_jq_portfolios/portfolios/app01/images/sample_01.jp">
+		画像
+	</div>
+	</div>
+
+	<h5>3分Webサイトプログラミング</h5>
+
+	<div>最近ではHTMLというホームページ作りに必須の言語も必要なく、簡単に作れるようになってきました。
+		<br>なので、本格的なサイトの基礎として、まずは１分でサイトを作りましょう！
+	</div>
+	<br>
+	<br>
+	<div id="menubay">
+	<ul>
+		<li> <a href="#1">1,ファイルを作る</a></li>
+		<li><a href="#2">2,サイトを作る準備</a></li>
+		<li><a href="#3">3,コードを書く</a></li>
+		<li><a href="#4">4,完成！</a></li>
+
+
+	</ul>
+</div>
+<br>
+<br>
+<h2 id="1">1,ファイルを作る</h2>
+<div>まずはVisual Studio CodeというアプリをWindowsかMacにダウンロードしてください</div>
+<a href="https://azure.microsoft.com/ja-jp/products/visual-studio-code/">Visual Studio Code</a>
+※自己責任でお願いします
+<br>
+<br><div>ダウンロードできたら、新しいファイルを作ってください。</div>
+<br>
+
+<div id="img1">
+<img src="/images/html.png">
+</div>
+
+<br>
+<br>
+<br>
+<h2 id="2">2,サイトを作る準備</h2>
+<div>新しいファイルが作成できたら、左にあるアイコンの『新しいファイル』を押して<br>
+入力するところが出たら『index.html』と入れてください。</div>
+<img src="/01_jq_portfolios/images/html2.png">
+<br>
+<br>
+<br>
+<h2 id="3">3,コードを書く</h2>
+<div>空白のページができたら、下のコードをコピーして貼り付けてください</div>
+
+    <!-- コピー対象要素とコピーボタン -->
+    <input id="copyTarget" type="text" 
+
+	value='<!DOCTYPE html>
+	<html lang="ja">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<title>App01</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/custom.css">
+	</head>
+	<body>
+		<div class="footer">
+	
+			<div id="logo">サイト</div>
+			<br>
+			<div id="menu">
+				<select name="example">
+					<option>メニュー</option>
+					<option>選択肢のサンプル1</option>
+					<option>選択肢のサンプル2</option>
+					</select>
+			</div>
+		
+		</div>
+	
+	
+		<h1>タイトル</h1>
+		<br>
+		<h1>記事タイトル</h1>
+		<a class="naiyou">内容</a>
+		<br>
+		クァwせdrftgyふじこlp；＠：「」
+		<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		
+		<form oninput="op1.value = Number(a.value) / Number(b.value);">
+			<input type="number" name="a"  size="5" placeholder="金額"> 円
+			➗
+			<input type="number" name="b" size="5" placeholder="人数"> 人
+			= <output name="op1">0</output>
+		  </form>
+		
+		  内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容
+	
+	
+	<!-- footer -->
+	<footer>
+		　　<ul class="footer-menu">
+			 <li>home ｜</li>
+			 <li>about ｜</li>
+			 <li>service ｜</li>
+			 <li>Contact Us</li>
+			</ul>
+			<p>© All rights reserved by mumenrider.</p>
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+	</html>'
+	
+	readonly>
+    <button onclick="copyToClipboard()">Copy text</button>
+
+	<br>
+	<br>
+	<div>コピーした文章を貼り付けて、画面をControlを押しながらクリックしてください</div>
+	<br><div>そうすると、このようにページが出来上がります。</div>
+	<a href="jja.html">完成したサイト</a>
+	<br>
+	<br>
+	<h2 id="4">4,完成！</h2>
+	<br>
+	<br>
+	<div>このサイトをそのまま使っても面白くないので、割り勘するときの計算機を作ってみました<br>
+		<form oninput="op1.value = Number(a.value) / Number(b.value);">
+			<input type="number" name="a"  size="5" placeholder="金額"> 円
+			➗
+			<input type="number" name="b" size="5" placeholder="人数"> 人
+			= <output name="op1">0</output>
+		  </form><br>
+		
+		このように HTML CSS JS の３個を極めれば、だいたいのサイトが作れるので頑張って覚えましょう。
+	</div>
+	<br><div>あとは文章を書いたり、アニメーションをつけたりしてみてください！</div>
+
+	
+
+	<a href="https://gist.github.com/mumenrider21/6a36dec12cac327ddd53235980c98563">ここにサンプルコードが載っています</a>
+
+	<br>
+	<br>
+
+
+
+
+	<br>
+	<br>
+	<br>
+
+	<div>この記事の真似をしてパソコンが壊れたりしても、一切責任は負いません。</div>
+<footer>
+	<div class="footer05">
+		<div class="wrap">
+		 <div class="box">
+		   <h3>ホーム</h3>
+		   <p>
+			<a href="#">
+			トップへ戻る
+			</a>
+		   </p>
+
+		 </div>
+		 <div class="box">
+		   <h3>お気に入り作品</h3>
+		   <ul>
+			 <li><a href="#">改造</a></li>
+			 <li><a href="#">塗装</a></li>
+			 <li><a href="#">マスク作成</a></li>
+			 <li><a href="#">s</a></li>
+		   </ul>
+		 </div>
+		 <div class="box">
+		   <h3>あ</h3>
+		   <ul>
+		   <li><a href="#">FFFFF</a></li>
+		   <li><a href="#">GGGGG</a></li>
+		   <li><a href="#">HHHHH</a></li>
+		   <li><a href="#">IIIII</a></li>
+		   <li><a href="#">JJJJJ</a></li>
+		   </ul>
+		 </div>
+		 <div class="box">
+		   <h3>ル</h3>
+		   <ul>
+		   <li><a href="#">KKKKK</a></li>
+		   <li><a href="#">LLLLL</a></li>
+		   <li><a href="#">MMMMM</a></li>
+		   <li><a href="#">NNNNN</a></li>
+		   <li><a href="#">OOOOO</a></li>
+		   </ul>
+		 </div>
+		 <p class="copyright">
+		   &copy; My Site
+		 </p>
+		</div>
+	   </div>
+</footer>		
+																																														<!-- JavaScript -->
+	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="./main.js"></script>
+
+	<script>
+function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+
+	</script>
+</body>
+</html>

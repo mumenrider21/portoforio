@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>App01</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+
+
+	<header id="header">
+		<div class="inner">
+		  <p class="logo">無免ライダー</p>
+		  <ul class="navi">
+			<li><a href="#">ホーム</a></li>
+			<li><a href="#">作品</a></li>
+			<li><a href="#">お問い合わせ</a></li>
+		  </ul>
+		</div>
+	  </header>
+
+	<style>
+		.fade{
+			animation: fadeIn 2s ease 0.3s 1 normal;
+		}
+		@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+			0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+			100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+		}
+	</style>
+	<div class="fade">
+		<div id="top">
+		<img src="/01_jq_portfolios/portfolios/app01/images/sample_01.jp">
+		画像
+	</div>
+	</div>
+
+	<h5>サイトのレイアウトの作り方</h5>
+
+	<div>サイトを作ってもレイアウトが汚い、見にくいのは流行りません
+		<br>なので、見栄えがいいサイトを作りましょう！
+	</div>
+	<br>
+	<br>
+	<div id="menubay">
+	<ul>
+		<li> <a href="#1">1,ファイルを作る</a></li>
+		<li><a href="#2">2,CSSを作る</a></li>
+		<li><a href="#3">3,コードを書く</a></li>
+		<li><a href="#4">4,完成！</a></li>
+
+
+	</ul>
+</div>
+<br>
+<br>
+<h2 id="1">1,ファイルを作る</h2>
+<div>まずはVisual Studio CodeというアプリをWindowsかMacにダウンロードしてください</div>
+<a href="https://azure.microsoft.com/ja-jp/products/visual-studio-code/">Visual Studio Code</a>
+※自己責任でお願いします
+<br>
+<br><div>ダウンロードできたら、新しいファイルを作ってください。</div>
+<br>
+
+<div id="img1">
+<img src="/images/html.png">
+</div>
+
+<br>
+<br>
+<br>
+<h2 id="2">2,CSSを作る</h2>
+<div>新しいファイルが作成できたら、左にあるアイコンの『新しいファイル』を押して<br>
+入力するところが出たら『index.html』と入れてください。
+<br>
+次に、「custom.css」を作ってくだい
+</div>
+<img src="/images/html2.png">
+<br>
+<br>
+<br>
+<h2 id="3">3,コードを書く</h2>
+<div>空白のページができたら、下のコードをコピーして貼り付けてください</div>
+
+    <!-- コピー対象要素とコピーボタン -->
+    <input id="copyTarget" type="text" 
+
+	value='<!DOCTYPE html>
+	<html lang="ja">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<title>App01</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/custom.css">
+	</head>
+	<body>
+		<div class="footer">
+	
+			<div id="logo">サイト</div>
+			<br>
+			<div id="menu">
+				<select name="example">
+					<option>メニュー</option>
+					<option>選択肢のサンプル1</option>
+					<option>選択肢のサンプル2</option>
+					</select>
+			</div>
+		
+		</div>
+	
+	
+		<h1>タイトル</h1>
+		<br>
+		<h1>記事タイトル</h1>
+		<a class="naiyou">内容</a>
+		<br>
+		クァwせdrftgyふじこlp；＠：「」
+		<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容<br>
+		内容
+	
+	
+	<!-- footer -->
+	<footer>
+		　　<ul class="footer-menu">
+			 <li>home ｜</li>
+			 <li>about ｜</li>
+			 <li>service ｜</li>
+			 <li>Contact Us</li>
+			</ul>
+			<p>© All rights reserved by mumenrider.</p>
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+	</html>'
+	
+	readonly>
+    <button onclick="copyToClipboard()">Copy text</button>
+
+	<br>
+	<br>
+	<div>次に、custom.cssにもコードをコピーしてください</div><br><br>
+	<div>  /* CSS */
+
+		html, body{
+			width: 100%; height: 100%;
+			margin: 0px; padding: 0px;
+		}
+		
+		#mapid{
+			margin: 0px; padding: 0px;
+			width: 480px; height: 320px;
+			background-color: gray;
+		}
+		/* フッター固定 */
+		.footer {
+			position: fixed; /* フッターを固定する */
+			background-color: aquamarine; /* 背景色 */
+			text-align: center; /* 文字を中央に */
+			/*bottom: 0px;  上部から配置の基準位置を決める */
+			/*right: 10px;  左から配置の基準位置を決める */
+			width: 100%; /* フッターの横幅を指定する */
+			height: 35px; /* フッターの高さを指定する */
+			z-index: 100; /* フッターを最前面に表示 */
+		  }
+		  #menu{
+		float: right;
+		background-color: aqua;
+		
+		}
+		.naiyou{
+			border: 10px transparent black;
+		}
+		
+		
+		* {
+			margin:0; padding:0;
+		  }
+		  header {
+			width: 100%;
+			height: 200px;
+			padding: 5px 0;
+			text-align: center;
+			color: #a52a2a;
+			background-image: url("sampleimg2.jpg");
+			background-position: center bottom;
+			background-size: cover;
+		  }
+		  header .headline{
+			  line-height: 100px;
+			  font-size: 30px;
+			  text-decoration: underline;
+		  }
+		  .nav-list {
+			  line-height: 100px;
+			  list-style: none;
+			  font-weight: bold;
+		  }
+		  .nav-list-item {
+			list-style: none;
+			display: inline-block;
+			margin: 0 20px;
+		  }
+		  footer{
+			  width: 100%;
+			  height: 100px;
+			  background-color: turquoise;
+			  color: white;
+			  text-align: center;
+		  }
+		  ul.footer-menu li {
+		  display: inline;
+		  }</div>
+	
+	<div>コピーした文章を貼り付けて、画面をControlを押しながらクリックしてください</div>
+	<br><div>そうすると、このようにページの下にある文字がきれいに配置できました。</div>
+	<img src="/portfolios/app02/images/1.png">
+	<br>
+	<br>
+	<h2 id="4">4,完成！</h2>
+	<br><div>他にも整える手段があるのでそれも紹介していきます。</div>
+	<br>
+	<br>font-size	フォントのサイズ
+	<br>letter-spacing	文字の間隔
+	<br>color	文字色
+	<br>line-height	行の高さ
+	<br>background	背景関連をまとめて指定
+	<br>background-image	背景画像
+	<br>overflow	はみ出た部分の表示方法
+	<br>
+	<br> 
+<div>今回は、CSSの書き方のついて触れました。<br>
+	CSSを極めれば、自分のサイトを思い通りにカスタマイズできますので頑張って学んでください。
+</div>
+	<a href="https://gist.github.com/mumenrider21/6a36dec12cac327ddd53235980c98563">ここにサンプルコードが載っています</a>
+
+	<br>
+	<br>
+
+
+
+
+	<br>
+	<br>
+	<br>
+
+	<div>この記事の真似をしてパソコンが壊れたりしても、一切責任は負いません。</div>
+<footer>
+	<div class="footer05">
+		<div class="wrap">
+		 <div class="box">
+		   <h3>ホーム</h3>
+		   <p>
+			<a href="#">
+			トップへ戻る
+			</a>
+		   </p>
+
+		 </div>
+		 <div class="box">
+		   <h3>お気に入り作品</h3>
+		   <ul>
+			 <li><a href="#">ゼロワンドライバーCSM化</a></li>
+			 <li><a href="#">バイスタンププロップ塗装</a></li>
+			 <li><a href="#">ギーツマスク作成</a></li>
+			 <li><a href="#">s</a></li>
+		   </ul>
+		 </div>
+		 <div class="box">
+		   <h3>あ</h3>
+		   <ul>
+		   <li><a href="#">FFFFF</a></li>
+		   <li><a href="#">GGGGG</a></li>
+		   <li><a href="#">HHHHH</a></li>
+		   <li><a href="#">IIIII</a></li>
+		   <li><a href="#">JJJJJ</a></li>
+		   </ul>
+		 </div>
+		 <div class="box">
+		   <h3>ル</h3>
+		   <ul>
+		   <li><a href="#">KKKKK</a></li>
+		   <li><a href="#">LLLLL</a></li>
+		   <li><a href="#">MMMMM</a></li>
+		   <li><a href="#">NNNNN</a></li>
+		   <li><a href="#">OOOOO</a></li>
+		   </ul>
+		 </div>
+		 <p class="copyright">
+		   &copy; My Site
+		 </p>
+		</div>
+	   </div>
+</footer>		
+																																														<!-- JavaScript -->
+	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="./main.js"></script>
+
+	<script>
+function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+
+	</script>
+</body>
+</html>
