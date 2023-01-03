@@ -7,9 +7,30 @@
 	<title>App01</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
+
+
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-9/css/5-1-9.css">
 </head>
 <body>
-
+  <header id="header" class="DownMove">
+    <h1>Logo</h1>
+    <nav>
+    <ul id="g-navi">
+      <li><a href="#area-1">Area1</a></li>
+      <li><a href="#area-2">Area2</a></li>
+      <li><a href="#area-3">Area3</a></li>
+      <li><a href="#area-4">Area4</a></li>
+    </ul>
+  </nav>
+  </header>
+	<div id="header">
+		<p>ヘッダー
 
 	<header id="header">
 		<div class="inner">
@@ -21,6 +42,13 @@
 		  </ul>
 		</div>
 	  </header>
+
+
+	</p>
+</div>
+
+<div id="contents">
+</div>
 
 	<style>
 		.fade{
@@ -37,7 +65,11 @@
 		画像
 	</div>
 	</div>
+	
 
+			
+	
+	  
 	<h5>サイトのレイアウトの作り方</h5>
 
 	<div>サイトを作ってもレイアウトが汚い、見にくいのは流行りません
@@ -297,9 +329,9 @@
 		 <div class="box">
 		   <h3>お気に入り作品</h3>
 		   <ul>
-			 <li><a href="#">ゼロワンドライバーCSM化</a></li>
-			 <li><a href="#">バイスタンププロップ塗装</a></li>
-			 <li><a href="#">ギーツマスク作成</a></li>
+			 <li><a href="#">ゼロ</a></li>
+			 <li><a href="#">塗装</a></li>
+			 <li><a href="#">マスク作成</a></li>
 			 <li><a href="#">s</a></li>
 		   </ul>
 		 </div>
@@ -334,6 +366,9 @@
 	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="./main.js"></script>
 
+	script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-9/js/5-1-9.js"></script>
+
 	<script>
 function copyToClipboard() {
             // コピー対象をJavaScript上で変数として定義する
@@ -349,6 +384,22 @@ function copyToClipboard() {
             alert("コピーできました！ : " + copyTarget.value);
         }
 
+	</script>
+
+
+<script>
+	document.querySelectorAll('.left').forEach(elm => {
+		elm.onclick = function () {
+			let ul = elm.parentNode.querySelector('ul');
+			ul.scrollLeft -= ul.clientWidth;
+		};
+	});
+	document.querySelectorAll('.right').forEach(elm => {
+		elm.onclick = function () {
+			let ul = elm.parentNode.querySelector('ul');
+			ul.scrollLeft += ul.clientWidth;
+		};
+	});
 	</script>
 </body>
 </html>

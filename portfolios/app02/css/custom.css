@@ -66,6 +66,34 @@ img{
 
 
 
+#header{
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 100%;
+	height: 45px;
+	background-color: #aaa;
+	transition: all 0.3s ease-out;
+  }
+  #header.fixed-hide{
+	top: -45px;
+  }
+  
+  #contents{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height: 500px;
+	padding-top: 47px;
+	background-color: #eee;
+  }
+
 
 
 
@@ -162,26 +190,182 @@ img{
 
 
 
-
-
-
-
-
-
-
-
-h5{
-	font-size: 150%;
+  <style>
+.hscroll {
+	width:200px;
+	height:200px;
+	position:relative;
+	border:1px solid lightgray;
 }
-#menubay{
-background-color:bisque;
-width: 400px;
-border: 2px solid #333;
+.hscroll ul {
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	scroll-snap-type:x mandatory;
+	scroll-behavior:smooth;
 }
+.hscroll img {
+	width:100%;
+	height:100%;
+	object-fit:contain;
+}
+.hscroll li {
+	list-style:none;
+	display:inline-block;
+	scroll-snap-align:center;
+	width:100%;
+	height:100%;
+}
+.arrow {
+	top:0;
+	position:absolute;
+	width:8%;
+	height:100%;
+	background:rgba(255,255,255,0.3);
+	cursor:pointer;
+}
+.arrow:before {
+	content:'';
+	position:absolute;
+	width:10px;
+	height:10px;
+	border-left:4px solid gray;
+	border-bottom:4px solid gray;
+}
+.left {
+	left:0px;
+}
+.left:before {
+	top:calc(50% - 10px);
+	left:calc(50% - 4px);
+	transform:rotate(45deg);
+}
+.right {
+	right:0;
+}
+.right:before {
+	top:calc(50% - 10px);
+	right:calc(50% - 6px);
+	transform:rotate(-135deg);
+}
+@media screen and (max-width:480px) {
+	.hscroll ul {
+		overflow-x:auto;
+	}
+}
+</style>
+
+
+
+
+
+
+
+
+  #header{
+    /*fixedで上部固定*/
+  position: fixed;
+  height: 70px;
+  width:100%;
+    z-index: 999;/*最前面へ*/
+  /*以下はレイアウトのためのCSS*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/*　上に上がる動き　*/
+
+#header.UpMove{
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime{
+  from {
+    opacity: 1;
+  transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#header.DownMove{
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+  font-size:1.2rem;
+}
+
 h2{
-	background-color: antiquewhite;
-	width: 300px;
-	height: 50px;
-	text-align: center;
-	border: 2px solid #333;
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+p{
+  margin-top:20px;  
+}
+
+small{
+  background:#333;
+  color:#fff;
+  display: block;
+  text-align: center;
+  padding:20px;
+}
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #666;
+  padding:10px;
+  transition:all 0.3s;
+}
+
+nav ul li.current a,
+nav ul li a:hover,
+nav ul li a:active{
+  color:#fff; 
+}
+
+main {
+      padding-top: 70px;
+}
+section{
+  padding:30px;
+}
+
+section:nth-child(2n){
+  background:#f3f3f3; 
 }
